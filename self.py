@@ -681,6 +681,7 @@ async def timebio_on(event):
 
 
 timezone = pytz.timezone(os.environ.get("TIME_ZONE", "Asia/Tehran"))
+pattern = os.environ.get("BIO_PATTERN", "【°•○Ⓣⓘⓜⓔ○•°】:•{TIME}•✓™")
                                         
 def get_text(time: str) -> str:
     return pattern.replace("{TIME}", time)
